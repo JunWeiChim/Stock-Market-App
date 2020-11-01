@@ -7,8 +7,7 @@ import 'package:sma/widgets/widgets/standard/header.dart';
 class PortfolioHeadingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final String formattedDate =
-        'October 30'; //DateFormat('MMMMd').format(DateTime.now());
+    final String formattedDate = DateFormat('MMMM').format(DateTime.now());
 
     return StandardHeader(
       title: 'My portfolio',
