@@ -7,16 +7,15 @@ import 'package:sma/widgets/widgets/standard/header.dart';
 class PortfolioHeadingSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
-    final String formattedDate = DateFormat('MMMMd').format(DateTime.now());
+    final String formattedDate =
+        'October 30'; //DateFormat('MMMMd').format(DateTime.now());
 
     return StandardHeader(
-      title: 'Portfolio',
+      title: 'My portfolio',
       subtitle: formattedDate,
       action: GestureDetector(
-        child: Icon(FontAwesomeIcons.user),
-        onTap: () => Navigator.pushNamed(context, '/about')
-      ),
+          child: Icon(FontAwesomeIcons.user),
+          onTap: () => Navigator.pushNamed(context, '/about')),
     );
   }
 }
